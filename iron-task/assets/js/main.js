@@ -89,32 +89,6 @@
 	}
 
 	// =============================================
-	// LOADER
-	// =============================================
-	function initLoader() {
-		if (!elements.loader) {
-			console.warn('Loader element not found');
-			state.isLoading = false;
-			return;
-		}
-
-		// Força o loader a ser visível inicialmente
-		elements.loader.style.opacity = '1';
-		elements.loader.style.visibility = 'visible';
-
-		setTimeout(() => {
-			elements.loader.classList.add('loader--hidden');
-			
-			// Remove do DOM após animação
-			setTimeout(() => {
-				elements.loader.style.display = 'none';
-				elements.loader.setAttribute('aria-hidden', 'true');
-				state.isLoading = false;
-			}, 600);
-		}, config.loaderDuration);
-	}
-
-	// =============================================
 	// THEME TOGGLE
 	// =============================================
 	function initThemeToggle() {
