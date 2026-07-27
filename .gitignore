@@ -1,1 +1,34 @@
-Nothing should be ignored based on the provided file changes. The only modified file is a JavaScript source file (`iron-task/assets/js/main.js`), which should not be added to .gitignore.
+```
+# Dependencies
+node_modules/
+
+# Build artifacts
+dist/
+build/
+*.min.js
+*.min.css
+*.map
+
+# WordPress specific
+wp-content/
+*.wp-config.php
+wp-config.php.bak
+
+# Environment
+.env
+.env.local
+.env.*
+
+# Editors
+.vscode/
+.idea/
+
+# Logs and temp files
+*.log
+*.tmp
+*.swp
+
+# OS generated files
+.DS_Store
+Thumbs.db
+```
